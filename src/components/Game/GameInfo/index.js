@@ -1,14 +1,12 @@
 import React, { useState } from "react";
+import { useGameContext } from "..";
 import { calculateWinner } from "../../../utils/calculateWinner";
 import ToggleButton from "./ToggleButton";
 
-export function GameInfo({
-  history,
-  xIsNext,
-  stepNumber,
-  currentSquares,
-  jumpTo,
-}) {
+export function GameInfo() {
+  const { history, xIsNext, stepNumber, currentSquares, jumpTo } =
+    useGameContext();
+
   const [isAsc, setIsAsc] = useState(false);
   const winner = calculateWinner(currentSquares);
 

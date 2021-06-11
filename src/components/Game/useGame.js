@@ -9,6 +9,7 @@ export function useGame() {
       picked: null,
     },
   ]);
+
   const [stepNumber, setStepNumber] = useState(0);
   const [xIsNext, setXIsNext] = useState(true);
 

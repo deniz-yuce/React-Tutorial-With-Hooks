@@ -1,32 +1,24 @@
 import React from "react";
+import { Row } from "./Row";
 import { Square } from "./Square";
 
-export class Board extends React.Component {
-  renderSquare(i) {
-    let extraClassName = "square";
-    if (this.props.winnerCells && this.props.winnerCells.indexOf(i) > -1) {
-      extraClassName = "square highlighted";
-    }
+const ROW_NUM = 3;
+const COL_NUM = 3;
 
-    return (
-      <Square
-        extraClass={extraClassName}
-        value={this.props.squares[i]}
-        onClick={() => this.props.onClick(i)}
-      />
-    );
-  }
+function createArrayWithLength(n) {
+  return Array.from(Array(n));
+}
 
-  render() {
-    let allSquares = [];
-    for (var row_n = 0; row_n < 3; row_n++) {
-      let rowSquares = [];
-      for (var col_n = 0; col_n < 3; col_n++) {
-        rowSquares.push(this.renderSquare(row_n * 3 + col_n));
-      }
-      allSquares.push(<div className="board-row">{rowSquares}</div>);
-    }
-
-    return <div>{allSquares}</div>;
-  }
+export function Board() {
+  return (
+    <div>
+      {createArrayWithLength(ROW_NUM).map((_, rowIndex) => (
+        <Row>
+          {createArrayWithLength(COL_NUM).map((_, colIndex) => (
+            <Square index={rowIndex * 3 + colIndex} />
+          ))}
+        </Row>
+      ))}
+    </div>
+  );
 }
