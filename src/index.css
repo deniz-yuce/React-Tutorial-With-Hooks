@@ -1,80 +1,82 @@
 body {
-    font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
-  }
-  
-  ol, ul {
-    padding-left: 30px;
-  }
-  
-  .board-row:after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  
-  .status {
-    margin-bottom: 2rem;
-    font-family: 'Nunito', sans-serif;
-    text-decoration: underline;
-    font-size: 1.5rem;
-  }
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
 
-  .toggle {
-    margin-top: 0.25rem;
-    margin-bottom: 0.75rem;
-  }
-  
-  .square {
-    background: rgb(211, 229, 238);
-    border: 0.25rem ridge rgb(109, 74, 130, .5);
-    border-radius: 1.75rem;
-    float: left;
-    font-family: 'Nunito', sans-serif;
-    color: rgb(80, 43, 75);
-    font-size: 5rem;
-    font-weight: lighter;
-    line-height: 7rem;
-    height: 7rem;
-    margin-right: -1px;
-    margin-top: -1px;
-    padding: 0;
-    text-align: center;
-    width: 7rem;
-  }
-  
-  .square:focus {
-    outline: none;
-  }
-  
-  .kbd-navigation .square:focus {
-    background: #ddd;
-  }
-  
-  .game {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .game-info {
-    margin: 10rem 10rem 10rem 2rem;
-  }
+ol,
+ul {
+  padding-left: 30px;
+}
 
-  .game-board {
-    margin: 10rem 2rem 10rem 15rem;
-  }
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
 
-  .bold {
-      font-weight: bold;
-      box-shadow: 2px 2px 5px 2px rgba(155, 81, 224, 0.3);
-  }
+.status {
+  margin-bottom: 2rem;
+  font-family: "Nunito", sans-serif;
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
 
-  .moves {
-      margin: 0.25rem;
+.toggle {
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+}
 
-  }
+.square {
+  background: rgb(211, 229, 238);
+  border: 0.25rem ridge rgb(109, 74, 130, 0.5);
+  border-radius: 1.75rem;
+  float: left;
+  font-family: "Nunito", sans-serif;
+  color: rgb(80, 43, 75);
+  font-size: 5rem;
+  font-weight: lighter;
+  line-height: 7rem;
+  height: 7rem;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 7rem;
+}
 
-  .highlighted {
-    background: rgba(125, 242, 152, 0.70);
-    font-weight: bold;
-  }
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-evenly; */
+  flex-direction: row;
+}
+
+.game-info {
+  margin: 10rem 10rem 10rem 2rem;
+}
+
+.game-board {
+  margin: 10rem 2rem 10rem 15rem;
+}
+
+.bold {
+  font-weight: bold;
+  box-shadow: 2px 2px 5px 2px rgba(155, 81, 224, 0.3);
+}
+
+.moves {
+  margin: 0.25rem;
+}
+
+.highlighted {
+  background: rgba(125, 242, 152, 0.7);
+  font-weight: bold;
+}
