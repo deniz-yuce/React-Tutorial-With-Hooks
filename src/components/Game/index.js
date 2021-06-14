@@ -38,7 +38,7 @@ export function Game() {
       }}
     >
       <div className="game">
-        <div className="game-board">
+        <div className="game-board ">
           <Board />
         </div>
         <GameInfo />

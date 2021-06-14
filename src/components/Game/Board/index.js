@@ -11,7 +11,7 @@ function createArrayWithLength(n) {
 
 export function Board() {
   return (
-    <div>
+    <div className="mob-board">
       {createArrayWithLength(ROW_NUM).map((_, rowIndex) => (
         <Row>
           {createArrayWithLength(COL_NUM).map((_, colIndex) => (

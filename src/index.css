@@ -1,6 +1,14 @@
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#root {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100vh;
 }
 
 ol,
@@ -18,12 +26,12 @@ ul {
   margin-bottom: 2rem;
   font-family: "Nunito", sans-serif;
   text-decoration: underline;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .toggle {
-  margin-top: 0.25rem;
   margin-bottom: 0.75rem;
+  font-size: 1.15rem;
 }
 
 .square {
@@ -33,15 +41,15 @@ ul {
   float: left;
   font-family: "Nunito", sans-serif;
   color: rgb(80, 43, 75);
-  font-size: 5rem;
+  font-size: 8rem;
   font-weight: lighter;
-  line-height: 7rem;
-  height: 7rem;
+  line-height: 10rem;
+  height: 10rem;
+  width: 10rem;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 7rem;
 }
 
 .square:focus {
@@ -54,17 +62,15 @@ ul {
 
 .game {
   display: flex;
-  /* align-items: center; */
-  /* justify-content: space-evenly; */
-  flex-direction: row;
+  align-self: center;
 }
 
 .game-info {
-  margin: 10rem 10rem 10rem 2rem;
+  margin-left: 2rem;
 }
 
 .game-board {
-  margin: 10rem 2rem 10rem 15rem;
+  margin-right: 2rem;
 }
 
 .bold {

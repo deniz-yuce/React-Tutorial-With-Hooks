@@ -33,8 +33,8 @@ export function GameInfo() {
       : "Go to game start";
     const formatClass =
       move === stepNumber
-        ? "bold button is-small is-outlined"
-        : "button is-small is-outlined";
+        ? "bold button is-normal is-outlined"
+        : "button is-normal is-outlined";
     return (
       <li key={move}>
         <button className={`${formatClass} moves`} onClick={() => jumpTo(move)}>
@@ -49,7 +49,7 @@ export function GameInfo() {
   }
 
   return (
-    <div className="game-info">
+    <div className="game-info ">
       <div className="status">{status}</div>
       <ToggleButton onToggle={() => setIsAsc(!isAsc)} isAsc={isAsc} />
       <ol>{moves}</ol>
